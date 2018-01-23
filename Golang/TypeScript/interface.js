@@ -1,12 +1,12 @@
-var Name = (function () {
-    function Name(firstName, lastName) {
+var Message = (function () {
+    function Message(firstName, lastName) {
         this.firstName = firstName;
         this.lastName = lastName;
         this.age = 18;
     }
-    return Name;
+    return Message;
 }());
 function allname(str) {
     console.log(str);
 }
-allname(new Name('', ''));
+allname(new Message('小', '米'));

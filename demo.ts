@@ -43,19 +43,67 @@
 // console.log(str);
 //*************************************************************************** */
 
-let obj: Object = { name: '小米', age: 18 }
-Object.defineProperty(obj, "name2", {
-  // value: '魅族',
-  // writable: true,
-  enumerable: true,
-  configurable: true,
-  get() {
-    return '你要获取'
-  },
-  set(val){
-    //this.name2 = val
-    console.log(val)
-  }
-})
+// let obj: Object = { name: '小米', age: 18 }
+// Object.defineProperty(obj, "name2", {
+//   // value: '魅族',
+//   // writable: true,
+//   enumerable: true,
+//   configurable: true,
+//   get() {
+//     return '你要获取'
+//   },
+//   set(val){
+//     //this.name2 = val
+//     console.log(val)
+//   }
+// })
+// console.log(obj)
 
-console.log(obj.name2=123)
+//****************************************************************************** */
+// //枚举
+// enum Color {Red, Green=0, Blue};
+// let ColorName:string = Color[0];
+// console.log(Color.Red,Color.Green);
+// console.log(ColorName);
+// let prettySure: any[] = [123,"3211"];
+// console.log(prettySure);
+//**************************************类型断言**************************************** */
+// interface Name {
+//   name : string;
+//   age : number;
+// }
+// class Message {
+//   constructor(public name ,public age){
+
+//   }
+// }
+// function log(msg : Name){
+//   console.log(msg)
+// }
+// log((new Message("xm",18) as Name))
+//******************************************const********************************************** */
+// const obj:object = {
+//   name:"小米",
+//   age:18
+// }
+// obj.name = ["123"]
+
+//学习笔记二
+
+//**********************************************函数类型************************************************** */
+// interface Search {
+//   (height: string,
+//   width: string):number
+// }
+// let fn:Search = function(str){
+//   return 123
+// }
+// fn("123","123")
+
+//***********************************************可索引类型********************************************************* */
+interface StringArray {
+  readonly [index: number]: number|string;
+}
+let myArray: StringArray = [1, "Fred"];
+
+console.log(myArray[0]);
