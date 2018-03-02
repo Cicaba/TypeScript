@@ -9,4 +9,4 @@ Object.defineProperty(obj, "name2", {
         console.log(val);
     }
 });
-console.log(obj.name2 = 123);
+console.log(obj);

@@ -16,7 +16,7 @@
 
 // let user = { firstName: "小", lastName: "米" };
 // console.log(greeter(user))
-//******************************************************************************** 
+//********************************************************************************
 
 // //定义一个接口
 // interface Person {
@@ -25,9 +25,9 @@
 // }
 // //定义一个类
 // class Student {
-//   // TypeScript的默认访问修饰符是public。 
+//   // TypeScript的默认访问修饰符是public。
 //   //   1）public声明的属性和方法在类的内部和外部均能访问到。 (new出来的对象都可以获得public 声明的属性和方法)
-//   //   2）protected声明的方法和属性只能在类的内部和其子类能访问。 
+//   //   2）protected声明的方法和属性只能在类的内部和其子类能访问。
 //   //   3）private声明的方法和属性只能在其类的内部访问。
 
 //   fullName: string;//公共属性
@@ -53,9 +53,8 @@ Object.defineProperty(obj, "name2", {
     return '你要获取'
   },
   set(val){
-    //this.name2 = val
+    //this.name2 = val;
     console.log(val)
   }
 })
-
-console.log(obj.name2=123)
+console.log(obj)
