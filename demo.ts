@@ -39,22 +39,7 @@
 //   return "Hello, " + person.firstName + " " + person.lastName;
 // }
 // let user = new Student("参数1", "参数2", "参数3");
-// let str : object[] = [()=>{}]
-// console.log(str);
+let str: object[] = [(() => { return {} })()]
+console.log(str);
 //*************************************************************************** */
-
-let obj: Object = { name: '小米', age: 18 }
-Object.defineProperty(obj, "name2", {
-  // value: '魅族',
-  // writable: true,
-  enumerable: true,
-  configurable: true,
-  get() {
-    return '你要获取'
-  },
-  set(val){
-    //this.name2 = val;
-    console.log(val)
-  }
-})
-console.log(obj)
+import Debug from './interface';

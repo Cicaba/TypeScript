@@ -7,6 +7,29 @@
     {
       "type": "node",
       "request": "launch",
+      "name": "node",
+      "program": "${file}"
+    },
+    {
+      "type": "chrome",
+      "request": "launch",
+      "name": "chrome",
+      "file": "${file}"
+    },
+    {
+      "name": "TS-Node",
+      "type": "node",
+      "request": "launch",
+      "program": "C:/Users/15334/AppData/Roaming/npm/node_modules/ts-node/dist/bin.js",
+      "args": [
+        "${relativeFile}"
+      ],
+      "cwd": "${workspaceRoot}",
+      "protocol": "inspector"
+    },
+    {
+      "type": "node",
+      "request": "launch",
       "name": "Launch Program",
       "program": "${workspaceFolder}/Golang/TypeScript/demo.js",
       "outFiles": [
